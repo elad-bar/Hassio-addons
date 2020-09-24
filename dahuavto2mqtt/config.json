@@ -1,0 +1,43 @@
+{
+    "name": "DahuaVTO2MQTT",
+    "version": "1.0.5",
+    "slug": "dahuavto2mqtt",
+    "description": "Listens to events from Dahua VTO unit and publishes them via MQTT Message",
+    "arch": [
+      "armhf",
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+    ],
+    "startup": "services",
+    "boot": "auto",
+    "options": {
+      "intercom": {
+        "host": "192.168.1.110",
+        "username": "admin",
+        "password": "admin"
+      },
+      "mqtt": {
+        "host": "core-mosquitto",
+        "port": "1883",
+        "username": "homeassistant",
+        "password": "homeassistant",
+        "topic_prefix": "DahuaVTO"
+      }
+    },
+    "schema": {
+      "intercom": {
+        "host": "str?",
+        "username": "str?",
+        "password": "str?"
+      },
+      "mqtt": {
+        "host": "str?",
+        "port": "int?",
+        "username": "str?",
+        "password": "str?",
+        "topic_prefix": "str?"
+      }
+    }
+} 
