@@ -16,5 +16,5 @@ bashio::log.info "FFS"
 bashio::log.info "Staring Dahua to MQTT"
 bashio::log.debug "Connecting to Intercom ${DAHUA_VTO_HOST} with username ${DAHUA_VTO_USERNAME}"
 bashio::log.debug "Connecting to Broker ${MQTT_BROKER_HOST} with username ${MQTT_BROKER_USERNAME}, Topic prefix: ${MQTT_BROKER_TOPIC_PREFIX}"
-php -f ./DahuaVTO.php
+python ./DahuaVTO.py
 bashio::log.info "Finished Dahua to MQTT"
