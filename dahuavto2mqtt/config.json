@@ -39,6 +39,5 @@
         "password": "str?",
         "topic_prefix": "str?"
       }
-    },
-    "image": "eladbar/addon-dahuavto2mqtt-{arch}"
+    }
 } 
