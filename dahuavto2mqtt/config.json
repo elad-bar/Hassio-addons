@@ -1,6 +1,6 @@
 {
     "name": "DahuaVTO2MQTT",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "slug": "dahuavto2mqtt",
     "description": "Listens to events from Dahua VTO unit and publishes them via MQTT Message",
     "arch": [
@@ -15,6 +15,7 @@
     "options": {
       "intercom": {
         "host": "192.168.1.110",
+        "ssl": false,
         "username": "admin",
         "password": "admin"
       },
@@ -29,6 +30,7 @@
     "schema": {
       "intercom": {
         "host": "str?",
+        "ssl": "bool?",
         "username": "str?",
         "password": "str?"
       },

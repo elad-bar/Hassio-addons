@@ -30,6 +30,7 @@ Add-on configuration:
 {
     "intercom": {
       "host": "192.168.1.110",
+      "ssl": false,
       "username": "admin",
       "password": "admin"
     },
